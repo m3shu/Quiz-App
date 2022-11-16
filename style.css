@@ -1,0 +1,133 @@
+html,
+body {
+    padding: 0px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;  
+    overflow: hidden;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+
+}
+
+.image {
+    background-color: RGB(217, 217, 217);
+    height: 300px;
+    width: 60%;
+    margin: 15px auto;
+    position: relative;
+
+}
+
+.image>div {
+    color: white;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    
+}
+
+input{
+    border: 1px solid RGB(128,128,128);
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-size: 18px;
+    text-indent: 5px;
+}
+
+button{
+    background-color: RGB(0,112,192);
+    height: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 130px;
+}
+
+
+
+#page1{
+    /* display: none; */
+}
+
+
+#page2{
+    display: none;
+}
+
+#page3{
+    display: none;
+}
+
+#page2 .grid {
+display: grid;
+grid-template-columns: auto auto auto;
+width: 40%;
+    margin: 0 auto;
+}
+
+#page2 .grid>div{
+    padding: 8px 12px;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#page2 .grid>div:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+#page2 .grid>div:nth-child(1){
+    background-color: #0070c0;
+}
+
+#page2 .grid>div:nth-child(2){
+    background-color: #00b0f0;
+}
+
+#page2 .grid>div:nth-child(3){
+    background-color: #00b050;
+}
+
+#page2 .grid>div:nth-child(4){
+    background-color: #ffc000;
+}
+
+#page2 .grid>div:nth-child(5){
+    background-color: #ed7d31;
+}
+
+#page2 .grid>div:nth-child(6){
+    background-color: #44546a;
+}
+
+table{
+    float: left;
+}
+.clear-both{
+    clear: both;
+}
+.trophy-image{
+    background-image: url("trophy.png");
+    height: 200px;
+    width: 200px;
+    float: right;
+}
